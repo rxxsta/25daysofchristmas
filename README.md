@@ -3,4 +3,4 @@ Write-ups for [TryHackMe's](https://tryhackme.com/) Advent of Cyber (CTF Challen
 
 An event providing a new set of security challeges each day starting from December 1st 2019 to December 26th 2019
 
-**Answers are redacted, only the steps will be shown**
+**Answers are redacted, only the steps and thoughts will be given**
