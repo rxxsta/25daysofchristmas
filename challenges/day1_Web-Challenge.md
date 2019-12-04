@@ -55,7 +55,7 @@ Now doing the same steps we did for the last cookie,
 we can see that the part after our username is being used again!!!
 ![same cookies](https://i.imgur.com/oFf7B9o.png)
 
-## Challenge 3: finding mcinventory's christmas request
+## Challenge 3: Finding mcinventory's christmas request
 
 So, we know that out usernames are being used as part of the cookie. So what happens if we make our OWN cookie and try to change that part to "mcinventory".
 Let's try it.
