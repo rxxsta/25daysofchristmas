@@ -1,4 +1,5 @@
-# Day 1: Web Challenge  - [C1](##challenge-1) | [C2](##challenge-2) | [C3](##challenge-3)
+# Day 1: Web Challenge
+## [Challenge 1](#challenge-1:-finding-the-name-of-the-cookie-used-for-authentication) | [Challenge 2](#challenge-2:-decoding-the-cookie-and-finding-the-fixed-value) | [Challenge 3](#challenge-3:-finding-mcinventory's-christmas-request)
 
 After the setup of deploying the machine and waiting a few minutes, we are now ready to access the webpage!
 
