@@ -1,4 +1,4 @@
-# Day 1: Web Challenge  - [C1](#challenge-1) | [C2](#challenge-2) | [C3](#challenge-3)
+# Day 1: Web Challenge  - [C1](##challenge-1) | [C2](##challenge-2) | [C3](##challenge-3)
 
 After the setup of deploying the machine and waiting a few minutes, we are now ready to access the webpage!
 
