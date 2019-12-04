@@ -71,6 +71,7 @@ Let's try it.
 
 Holy cow it worked!
 ![mcinventory](https://i.imgur.com/BYAJD7S.png)
+
 Looks like he was an admin :O
 
 And from here we can see what was on his approval list? Guess he was in charge of approvals and looks like he approved his own gift LOL
