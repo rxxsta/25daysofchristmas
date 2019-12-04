@@ -1,6 +1,6 @@
 # Day 1: Web Challenge 
 
-## [Challenge 1](#challenge-1) | [Challenge 2](#challenge-2) | [Challenge 3](#challenge-3)
+## [Challenge 1](##challenge-1) | [Challenge 2](##challenge-2) | [Challenge 3](##challenge-3)
 
 After the setup of deploying the machine and waiting a few minutes, we are now ready to access the webpage!
 
