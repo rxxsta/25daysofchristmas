@@ -1,6 +1,4 @@
-# Day 1: Web Challenge 
-
-## Challenge 1 | Challenge 2 | Challenge 3
+# Day 1: Web Challenge  - [C1](#challenge-1) | [C2](#challenge-2) | [C3](#challenge-3)
 
 After the setup of deploying the machine and waiting a few minutes, we are now ready to access the webpage!
 
@@ -12,7 +10,7 @@ We're greeted by this cute little elf
 and a login screen
 ![elf](https://i.imgur.com/z4v17ED.gif)
 
-## [Challenge 1](#challenge-1): Finding the name of the cookie used for authentication
+## Challenge 1: Finding the name of the cookie used for authentication
 
 The supporting documentation tells us that using "Burp Suite" is an option. But, for today, we can just use our browser's developer options.
 
@@ -31,7 +29,7 @@ Let's look for some cookies! You can hit `f12` to shorcut to the developer tools
 For firefox, you can find them under the storage tab
 ![cookie](https://i.imgur.com/eXCey2g.png)
 
-## [Challenge 2](#challenge-2): Decoding the cookie and finding the fixed value
+## Challenge 2: Decoding the cookie and finding the fixed value
 
 In the last challenge we can also see the value of the cookie.
 But what the heck is it encoded in? A quick google search and a look in the supporting documentation suggests that it is most likely [base64](https://stackoverflow.com/questions/201479/what-is-base-64-encoding-used-for) encoded.
@@ -56,7 +54,7 @@ Now doing the same steps we did for the last cookie,
 we can see that the part after our username is being used again!!!
 ![same cookies](https://i.imgur.com/oFf7B9o.png)
 
-## [Challenge 3](#challenge-3): finding mcinventory's christmas request
+## Challenge 3: finding mcinventory's christmas request
 
 So, we know that out usernames are being used as part of the cookie. So what happens if we make our OWN cookie and try to change that part to "mcinventory".
 Let's try it.
