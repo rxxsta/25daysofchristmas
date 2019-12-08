@@ -1,6 +1,6 @@
 # Day 2: Brute Forcing Directories
 
-## [Challenge 1](#challenge-1-finding-the-hidden-directory) | [Challenge 2](#challenge-2-find-a-password) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
+## [Challenge 1](#challenge-1-finding-the-hidden-directory) | [Challenge 2](#challenge-2-find-a-password) | [Challenge 3](#challenge-3-what-to-take-to-the-partay)
 
 After the setup of deploying the machine and waiting a few minutes, we are now ready to access the webpage!
 
@@ -52,3 +52,10 @@ Found it!
 
 Looks like it came with default credentials. Rookie mistake..
 ![rookie mistake](https://i.imgur.com/bBUmzaB.png)
+
+## Challenge 3: What to take to the partay
+
+With the credentials from the last challenge, let's login with them heheh
+
+A little looking around, and we can see what we should bring to the PARTAY
+![partay](https://i.imgur.com/MfclTZt.png)
