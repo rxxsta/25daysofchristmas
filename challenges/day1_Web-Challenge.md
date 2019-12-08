@@ -44,7 +44,7 @@ You might get an error because the copied cookie value has an appendage of `%3D%
 Oh wow! Our username is being used as part of our authentication cookie, that's probably not secure.
 ![decoded cookie](https://i.imgur.com/1L4IOsO.png)
 
-### Checking to see what part of the cookie static
+### Checking to see what part of the cookie is static
 
 One way to test this is registering a new user and looking at it's cookie value. It should be different than the one we just found, right?
 
