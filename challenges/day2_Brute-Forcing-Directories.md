@@ -9,4 +9,28 @@ The challenge tells us how to reach it
 ![website access](https://i.imgur.com/eDBZ9KV.png)
 
 We're greeted by this cold penguin
-![elf](https://i.imgur.com/aWt5pSf.png)
+![penguin](https://i.imgur.com/aWt5pSf.png)
+
+## Challenge 1: Finding the hidden directory
+
+The supporting material helps us out. It shows us how we can use DirBuster and some directory lists. If you're using Kali these things come by default!
+
+Some lists we can use are located under
+`/usr/share/dirbuster/wordlists/`
+
+### Running dirbuster
+
+Would could also use the commandline dirbuster tool, but a GUI tool is already given to us.
+You can search "dirbuster" in the applications of Kali
+
+We can use a small wordlist I think. No way TryHackMe would make it too long to find.
+😅
+
+The red means that field was changed
+![dirbuster](https://i.imgur.com/kX7wDZZ.png)
+Recursive was turned off because otherwise it would take an uber long time. It would search directories within directories!!
+
+We can checkout the results under one of the results tabs.
+
+After a while of dirbuster doing its thing, we get an interesting looking directory with a response code of 200 and it looks like our flag :)
+![secret dir](https://i.imgur.com/IEbk8HG.png)
