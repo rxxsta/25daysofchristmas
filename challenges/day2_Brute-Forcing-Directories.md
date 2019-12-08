@@ -1,6 +1,6 @@
 # Day 2: Brute Forcing Directories
 
-## [Challenge 1](#challenge-1-finding-the-hidden-directory) | [Challenge 2](#challenge-2-decoding-the-cookie-and-finding-the-fixed-value) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
+## [Challenge 1](#challenge-1-finding-the-hidden-directory) | [Challenge 2](#challenge-2-find-a-password) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
 
 After the setup of deploying the machine and waiting a few minutes, we are now ready to access the webpage!
 
@@ -34,3 +34,21 @@ We can checkout the results under one of the results tabs.
 
 After a while of dirbuster doing its thing, we get an interesting looking directory with a response code of 200 and it looks like our flag :)
 ![secret dir](https://i.imgur.com/IEbk8HG.png)
+
+## Challenge 2: Find a password
+
+If we go to that directory, we can see a similar looking page.
+![secret](https://i.imgur.com/MBS8Qig.png)
+
+Hmmm let's look at the source code with our browser's developer tools.
+
+![github](https://i.imgur.com/CUtUuOT.png)
+Oh hey! Looks like we find the page design for this website on github under the name:
+> arctic digital design
+
+So let's try and search them on github
+![arctic](https://i.imgur.com/H2AaBR1.png)
+Found it!
+
+Looks like it came with default credentials. Rookie mistake..
+![rookie mistake](https://i.imgur.com/bBUmzaB.png)
