@@ -1,6 +1,6 @@
 # Day 4: Learning Some Linux
 
-## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-find-a-password) | [Challenge 3](#challenge-3-what-to-take-to-the-partay)
+## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-to-take-to-the-partay)
 
 After deploying our machine and waiting a while
 we have to SSH into this our machine.
@@ -17,3 +17,10 @@ We can check by running `pwd`.
 It looks like this is the right directory.
 
 The `ls` lists the contents of the directory we're in.
+
+## Challenge 2: Content of file5
+
+We can use the `cat` command to concatinate file5 and an emptyfile to just print out the content of file5.
+
+![file5](https://i.imgur.com/rdKgxx3.png)
+
