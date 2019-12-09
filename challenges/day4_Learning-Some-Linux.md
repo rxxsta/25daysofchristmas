@@ -1,6 +1,6 @@
 # Day 4: Learning Some Linux
 
-## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password)
+## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-what-file-contains-the-string-password) | [Challenge 6](#challenge-6-what-file-contains-the-string-password) | [Challenge 7](#challenge-7-what-file-contains-the-string-password)
 
 After deploying our machine and waiting a while
 we have to SSH into this our machine.
@@ -28,7 +28,9 @@ We can use the `cat` command to concatinate file5 and an emptyfile to just print
 
 We can use the `grep` command to search for a pattern inside files.
 
-Looking in the man page we see that the `-r` switch can recursively look inside files for the pattern "password"
+Looking in the man page we see that the `-r` flag can recursively look inside files for the pattern "password"
 
 ![pass](https://i.imgur.com/NyvHjts.png)
-The "." (dot) means *this* directory. So, it will like inside all of the files.
+The "." (dot) means *this* directory. So, it will look inside all of the within *this* directory.
+
+## Challenge 4: What file contains an IP address
