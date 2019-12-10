@@ -1,6 +1,6 @@
 # Day 4: Learning Some Linux
 
-## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-file-contains-the-string-password) | [Challenge 7](#challenge-7-what-file-contains-the-string-password)
+## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-is-the-sha1-hash-of-file8) | [Challenge 7](#challenge-7-what-file-contains-the-string-password)
 
 After deploying our machine and waiting a while
 we have to SSH into this our machine.
@@ -54,3 +54,12 @@ I know it's for centos 7 but I was pretty sure that it can apply to most linux d
 `$ getent passwd | egrep -v '/s?bin/(nologin|shutdown|sync|halt)' | cut -d: -f1`
 
 So, it lists the contents of /etc/passwd and cuts out the line where it contains `/bin/nologin` or `/bin/shutdown` or `/bin/sync` or `/bin/halt`. The leftovers are the users that can login to our system.
+
+## Challenge 6: What is the sha1 hash of file8
+
+I think it's asking us to encrypt file8 with sha1. So let's do that.
+
+There is a `sha1sum` tool that we can use. It will output the sha1 value of anything we provide it.
+
+The command: `sha1sum file8` will poop out our answer.
+
