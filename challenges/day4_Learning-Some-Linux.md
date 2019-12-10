@@ -34,3 +34,14 @@ Looking in the man page we see that the `-r` flag can recursively look inside fi
 The "." (dot) means *this* directory. So, it will look inside all of the within *this* directory.
 
 ## Challenge 4: What file contains an IP address
+
+Because the answer box in \#4 had the format "\*.\*.\*.*", I'm fairly certain that the ip is an IPv4 address so we can look for the "." character in the files. Hopefully there's not too many.
+
+...
+
+So, after struggling with the regex, I said fuck it, and literally just looked for any "."\
+`grep -r "\." .`\
+The "\\" character is an escape character, otherwise it would treat the "."(dot) as matching any character.
+
+Lucky for me/us there weren't that many dots
+![fucking dot](https://i.imgur.com/oYScdzy.png)
