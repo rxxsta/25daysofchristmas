@@ -1,6 +1,6 @@
 # Day 4: Learning Some Linux
 
-## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-is-the-sha1-hash-of-file8) | [Challenge 7](#challenge-7-what-file-contains-the-string-password)
+## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-is-the-sha1-hash-of-file8) | [Challenge 7](#challenge-7-mcsysadmin's-password-hash)
 
 After deploying our machine and waiting a while
 we have to SSH into this our machine.
@@ -61,5 +61,8 @@ I think it's asking us to encrypt file8 with sha1. So let's do that.
 
 There is a `sha1sum` tool that we can use. It will output the sha1 value of anything we provide it.
 
-The command: `sha1sum file8` will poop out our answer.
+The command `sha1sum file8` will poop out our answer.
 
+## Challenge 7: Mcsysadmin's password hash
+
+//TODO I wasn't exactly sure what it was asking. I will comeback at a later time.
