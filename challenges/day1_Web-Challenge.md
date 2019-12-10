@@ -58,7 +58,7 @@ we can see that the part after our username is being used again!!!
 
 ## Challenge 3: Finding mcinventory's christmas request
 
-So, we know that out usernames are being used as part of the cookie. So what happens if we make our OWN cookie and try to change that part to "mcinventory".
+So, we know that out usernames are being used as part of the cookie. So what happens if we make our OWN cookie and try to change that part to "mcinventory"??
 Let's try it.
 
 ### Trying to pretend to be mcinventory by changing our cookie
