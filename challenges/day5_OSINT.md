@@ -1,6 +1,6 @@
 # Day 5: Open Source Intelligence Gathering
 
-## [Challenge 1](#challenge-1-finding-lola's-date-of-birth) | [Challenge 2](#challenge-2-lola's-occupation) | [Challenge 3](#challenge-3-what-phone-does-lola-make) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in)
+## [Challenge 1](#challenge-1-finding-lola's-date-of-birth) | [Challenge 2](#challenge-2-lola's-occupation) | [Challenge 3](#challenge-3-what-phone-does-lola-make) | [Challenge 4](#challenge-4-What-date-did-lola-first-start-photography) | [Challenge 5](#challenge-5-how-many-users-can-log-in)
 
 Here, we are given a picture of the grinch (probably full of grumpy [metadata](https://en.wikipedia.org/wiki/Metadata)).
 
@@ -42,3 +42,8 @@ It's also in her bio.
 ## Challenge 3: What phone does Lola make
 
 She made a tweet about it.
+
+## Challenge 4: What date did lola first start photography
+
+I didn't know about this one (thank you helpful documents)!\
+We can use [Wayback Machine](https://web.archive.org) to give us some snapshots of when her website (her website is in her bio) was changed.
