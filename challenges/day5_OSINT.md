@@ -1,6 +1,6 @@
 # Day 5: Open Source Intelligence Gathering
 
-## [Challenge 1](#challenge-1-finding-lola's-date-of-birth) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in)
+## [Challenge 1](#challenge-1-finding-lola's-date-of-birth) | [Challenge 2](#challenge-2-lola's-occupation) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in)
 
 Here, we are given a picture of the grinch (probably full of grumpy [metadata](https://en.wikipedia.org/wiki/Metadata)).
 
@@ -27,10 +27,14 @@ To use in the command line:
 
 3. `sudo python3 sherlock.py JLolax1` (searches social media for JLolax1)
 
-### finding her social media account
+### Finding her social media account
 
 There is a couple of duds, but it looks like Lola has a twitter!
 
 ![twitter](https://i.imgur.com/bLLhMTo.png)
 
-She has her birthday in her bio
+She has her birthday in her bio.
+
+## Challenge 2: Lola's occupation
+
+It's also in her bio.
