@@ -1,6 +1,6 @@
 # Day 4: Learning Some Linux
 
-## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-what-file-contains-the-string-password) | [Challenge 6](#challenge-6-what-file-contains-the-string-password) | [Challenge 7](#challenge-7-what-file-contains-the-string-password)
+## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-file-contains-the-string-password) | [Challenge 7](#challenge-7-what-file-contains-the-string-password)
 
 After deploying our machine and waiting a while
 we have to SSH into this our machine.
@@ -45,3 +45,12 @@ The "\\" character is an escape character, otherwise it would treat the "."(dot)
 
 Lucky for me/us there weren't that many dots
 ![fucking dot](https://i.imgur.com/oYScdzy.png)
+
+## Challenge 5: How many users can log in
+
+After some googling, I came up with this [site](https://linuxhint.com/list_users_centos_7/) that tells us how to list the users that can login to the machine.\
+I know it's for centos 7 but I was pretty sure that it can apply to most linux distros.
+
+`$ getent passwd | egrep -v '/s?bin/(nologin|shutdown|sync|halt)' | cut -d: -f1`
+
+So, it lists the contents of /etc/passwd and cuts out the line where it contains `/bin/nologin` or `/bin/shutdown` or `/bin/sync` or `/bin/halt`. The leftovers are the users that can login to our system.
