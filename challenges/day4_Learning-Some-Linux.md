@@ -1,6 +1,6 @@
 # Day 4: Learning Some Linux
 
-## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-is-the-sha1-hash-of-file8) | [Challenge 7](#challenge-7-mcsysadmin's-password-hash)
+## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-is-the-sha1-hash-of-file8) | [Challenge 7](#challenge-7-mcsysadmins-password-hash)
 
 After deploying our machine and waiting a while
 we have to SSH into this our machine.
@@ -30,7 +30,7 @@ We can use the `grep` command to search for a pattern inside files.
 
 Looking in the man page we see that the `-r` flag can recursively look inside files for the pattern "password"
 
-![pass](https://i.imgur.com/NyvHjts.png)
+![pass](https://i.imgur.com/NyvHjts.png)\
 The "." (dot) means *this* directory. So, it will look inside all of the within *this* directory.
 
 ## Challenge 4: What file contains an IP address
@@ -65,4 +65,4 @@ The command `sha1sum file8` will poop out our answer.
 
 ## Challenge 7: Mcsysadmin's password hash
 
-//TODO I wasn't exactly sure what it was asking. I will comeback at a later time.
+//TODO I wasn't exactly sure what it was asking. Or what exactly to look for. I will comeback at a later time.

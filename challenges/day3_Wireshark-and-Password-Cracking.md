@@ -1,6 +1,6 @@
 # Day 3: Wireshark and Password Cracking
 
-## [Challenge 1](#challenge-1-destination-ip-on-packet-number-998) | [Challenge 2](#challenge-2-item-on-the-christmas-list) | [Challenge 3](#challenge-3-crack-buddy's-password)
+## [Challenge 1](#challenge-1-destination-ip-on-packet-number-998) | [Challenge 2](#challenge-2-item-on-the-christmas-list) | [Challenge 3](#challenge-3-crack-buddys-password)
 
 This challenege only comes with an *EVIL* pcap (packet capture) file.\
 Lucky for us Kali comes with wireshark to analyze the pcap and hashcat to crack any hashes we find!
@@ -16,12 +16,12 @@ We're going to be looking in the "No." column for the 998th packet/frame, and in
 Wireshark provides a super neat feature of [filtering](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html) out packets.
 
 We can apply the display filter of`frame.number == 998`
-![998](https://i.imgur.com/iBU9Jco.png)
+![998](https://i.imgur.com/iBU9Jco.png)\
 and we can find the destination IP easily
 
 ## Challenge 2: item on the christmas list
 
-Now that we have the evil packet and the evil destination. let's see what other evil things are going to there.
+Now that we have the evil packet and the evil destination. Let's see what other evil things are going to there.
 
 Let's apply `ip.dst == <destination ip>` to the display filter
 ![evil destination](https://i.imgur.com/86lUwnH.png)

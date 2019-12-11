@@ -1,6 +1,6 @@
 # Day 5: Open Source Intelligence Gathering
 
-## [Challenge 1](#challenge-1-finding-lola's-date-of-birth) | [Challenge 2](#challenge-2-lola's-occupation) | [Challenge 3](#challenge-3-what-phone-does-lola-make) | [Challenge 4](#challenge-4-what-date-did-lola-first-start-photography) | [Challenge 5](#challenge-5-what-famous-woman-does-lola-have-on-her-web-page)
+## [Challenge 1](#challenge-1-finding-lolas-date-of-birth) | [Challenge 2](#challenge-2-lolas-occupation) | [Challenge 3](#challenge-3-what-phone-does-lola-make) | [Challenge 4](#challenge-4-what-date-did-lola-first-start-photography) | [Challenge 5](#challenge-5-what-famous-woman-does-lola-have-on-her-web-page)
 
 Here, we are given a picture of the grinch (probably full of grumpy [metadata](https://en.wikipedia.org/wiki/Metadata)).
 
@@ -11,7 +11,7 @@ Kali comes with some tools to dig into the metadata such as `exiv2`.
 Using exiv2 we can extract the metadata of the image using `exiv2 ex thegrinch.jpg` and it will extract it into a file called "thegrinch.exv".
 
 If we look out the content of that exv file
-![meta](https://i.imgur.com/ihJRvld.png)
+![meta](https://i.imgur.com/ihJRvld.png)\
 We see that there seems to be username here!
 
 ### Using Sherlock to find where the username belongs to
