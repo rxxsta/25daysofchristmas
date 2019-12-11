@@ -51,3 +51,11 @@ AND NOW we can unzip it with the password we found.
 And we have Little Jimmy's list.
 ![list](https://i.imgur.com/msg4j4J.png)
 The flavor text is hilarious 😂.
+
+## Challenge 3: What was hidden within the file
+
+It's probably talking about the jpg file. Let's use steghide (as suggested). I don't think Kali comes out of the box with this either :(. Download it with `sudo apt install steghide`.
+
+run `steghide extract -sf TrHackMe.jpg` and it extracts a hidden text file!
+
+The answer is in the beginning portion of the text.
