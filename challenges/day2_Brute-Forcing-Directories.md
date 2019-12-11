@@ -57,5 +57,5 @@ Looks like it came with default credentials. Rookie mistake..
 
 With the credentials from the last challenge, let's login with them heheh
 
-A little looking around, and we can see what we should bring to the PARTAY
+A little looking around, and we can see what we should bring to the PARTAY!!
 ![partay](https://i.imgur.com/MfclTZt.png)
