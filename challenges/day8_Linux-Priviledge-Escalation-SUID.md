@@ -1,6 +1,6 @@
 # Day 8: Linux Privilege Escalation
 
-## [Challenge 1](#challenge-1-what-port-is-ssh-running-on) | [Challenge 2](#challenge-2-decoding-the-cookie-and-finding-the-fixed-value) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
+## [Challenge 1](#challenge-1-what-port-is-ssh-running-on) | [Challenge 2](#challenge-2-find-and-run-a-file-as-igor-and-read-the-file-home/igor/flag1.txt) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
 
 In this day, we are eventually trying to get root privilege.
 
@@ -20,3 +20,18 @@ You might want to do something else for a few minutes because it will take a whi
 
 We just wanted to see if any ports were open and then go from there. But after this scan we can see there's only one port open.\
 This is most likey our SSH port we were looking for.
+
+## Challenge 2: Find and run a file as igor, and read the file /home/igor/flag1.txt
+
+Now that we have the port SSH is hosted on, let's connect to it with Holly's credentials.
+
+`ssh holly@<machine-ip> -p <port-number>`
+
+let's find what programs we can run as igor with:\
+`find / -usr igor -perm -4000 -exec ls -ldb {} \; 2>/dev/null`
+
+The `find` command is run as igor!
+![igor](https://i.imgur.com/EGBWFHj.png)
+
+That means we can use the `-exec` flag with find and output the contents of the flag.\
+`find /home/igor/ -name flag1.txt -exec cat {} \; 2>/dev/null`
