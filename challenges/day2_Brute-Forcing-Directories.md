@@ -20,14 +20,14 @@ Some lists we can use are located under
 
 ### Running dirbuster
 
-Would could also use the commandline dirbuster tool, but a GUI tool is already given to us.
+Would could also use the command line dirbuster tool, but a GUI tool is already given to us.
 You can search "dirbuster" in the applications of Kali
 
 We can use a small wordlist I think. No way TryHackMe would make it too long to find.
 😅
 
 The red means that field was changed
-![dirbuster](https://i.imgur.com/kX7wDZZ.png)
+![dirbuster](https://i.imgur.com/kX7wDZZ.png)\
 Recursive was turned off because otherwise it would take an uber long time. It would search directories within directories!!
 
 We can checkout the results under one of the results tabs.
@@ -42,11 +42,11 @@ If we go to that directory, we can see a similar looking page.
 
 Hmmm let's look at the source code with our browser's developer tools.
 
-![github](https://i.imgur.com/CUtUuOT.png)
+![github](https://i.imgur.com/CUtUuOT.png)\
 Oh hey! Looks like we find the page design for this website on github under the name:
 > arctic digital design
 
-So let's try and search them on github
+So let's try and search for them on github
 ![arctic](https://i.imgur.com/H2AaBR1.png)
 Found it!
 
@@ -57,5 +57,5 @@ Looks like it came with default credentials. Rookie mistake..
 
 With the credentials from the last challenge, let's login with them heheh
 
-A little looking around, and we can see what we should bring to the PARTAY
+A little looking around, and we can see what we should bring to the PARTAY!!
 ![partay](https://i.imgur.com/MfclTZt.png)
