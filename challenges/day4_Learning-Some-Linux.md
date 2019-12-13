@@ -65,4 +65,13 @@ The command `sha1sum file8` will poop out our answer.
 
 ## Challenge 7: Mcsysadmin's password hash
 
-//TODO I wasn't exactly sure what it was asking. I will comeback at a later time.
+Normally hashes would be in /etc/shadow but it looks like we don't have permission to read this file.\
+![shadow](https://i.imgur.com/QFtaK8g.png)
+
+Maybe they left a backup somewhere. Let's look for one!\
+`find / -name *.bak 2>/dev/null` will look for any backup files in the system that we are allowed to read.\
+And looks like there is a backup file!
+![shadow.bak](https://i.imgur.com/q3dBUjy.png)
+
+mcsysadmin's hash
+![hash](https://i.imgur.com/Pk9blJ2.png)
