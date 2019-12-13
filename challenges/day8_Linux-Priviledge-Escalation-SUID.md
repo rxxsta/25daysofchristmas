@@ -40,7 +40,7 @@ That means we can use the `-exec` flag with find and output the contents of the 
 
 So lets see what files have the SUID bit on that run as root.\
 We can do that with:\
-`find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null | grep -v "/snap`
+`find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null | grep -v "/snap"`
 
 "system-control" was changed around the time this day was release\
 ![root](https://i.imgur.com/vKZi2wf.png)\
