@@ -5,3 +5,5 @@
 There's a webserver running on the deployed machine.\
 We gotta hack into it.
 ![naughty and nice](https://i.imgur.com/3QrByD7.png)
+We're probably going to have to use Metasploit..\
+Luckily, Kali comes with Metasploit!
