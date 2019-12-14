@@ -1,6 +1,6 @@
 # Learning Some Metasploit
 
-## [Challenge 1](#challenge-1-compromise-the-web-server-using-metasploit-and-find-flag1) | [Challenge 2](#challenge-2-what-is-the-name-of-the-operating-system-of-the-host) | [Challenge 3](#challenge-3-what-version-of-ssh-is-running) | [Challenge 4](#challenge-4-name-of-the-file-that-is-accessible-on-the-server-we-found-running)
+## [Challenge 1](#challenge-1-compromise-the-web-server-using-metasploit-and-find-flag1) | [Challenge 2](#challenge-2-what-is-santas-ssh-password) | [Challenge 3](#challenge-3-what-version-of-ssh-is-running) | [Challenge 4](#challenge-4-name-of-the-file-that-is-accessible-on-the-server-we-found-running)
 
 There's a web server running on the deployed machine.\
 We gotta hack into it.
@@ -41,3 +41,12 @@ I looked inside the directories that were last modified around the time this cha
 
 After some digging in these directories I found flag1!
 ![flag1](https://i.imgur.com/o4FhAk2.png)
+
+## Challenge 2: What is Santa's SSH password
+
+\* *Still inside the web server* *  
+Let's go to "/", the main system directory.\
+There's a directory called "flag-dir" but with nothing in it...\
+
+After some digging using the same formula as the last challenge. I found Santa's SSH passowrd.\
+![santa ssh](https://i.imgur.com/d2Py5ST.png)
