@@ -50,3 +50,20 @@ There's a directory called "flag-dir" but with nothing in it...\
 
 After some digging using the same formula as the last challenge. I found Santa's SSH passowrd.\
 ![santa ssh](https://i.imgur.com/d2Py5ST.png)
+
+## Challenge 3: line 148 on the naughty list
+
+You can close metasploit.
+
+Now that we have Santa's ssh credentials we can log into his server.\
+`ssh santa@<machine-ip>`
+
+Quality shell art!\
+![reindeer](https://i.imgur.com/1wSOaMq.png)
+
+There's two list in here.\
+![lists](https://i.imgur.com/E0qtU8t.png)
+
+Run `cat naughty_list.txt | grep -n . | grep 148`\
+This will filter out for the 148th line.\
+`-n` in the grep command prepends each line with its corresponding line number.
