@@ -1,6 +1,6 @@
 # Learning Some Metasploit
 
-## [Challenge 1](#challenge-1-compromise-the-web-server-using-metasploit-and-find-flag1) | [Challenge 2](#challenge-2-what-is-santas-ssh-password) | [Challenge 3](#challenge-3-what-version-of-ssh-is-running) | [Challenge 4](#challenge-4-name-of-the-file-that-is-accessible-on-the-server-we-found-running)
+## [Challenge 1](#challenge-1-compromise-the-web-server-using-metasploit-and-find-flag1) | [Challenge 2](#challenge-2-what-is-santas-ssh-password) | [Challenge 3](#challenge-3-line-148-on-the-naughty-list) | [Challenge 4](#challenge-4-line-52-on-the-nice-list)
 
 There's a web server running on the deployed machine.\
 We gotta hack into it.
@@ -51,7 +51,7 @@ There's a directory called "flag-dir" but with nothing in it...\
 After some digging using the same formula as the last challenge. I found Santa's SSH passowrd.\
 ![santa ssh](https://i.imgur.com/d2Py5ST.png)
 
-## Challenge 3: line 148 on the naughty list
+## Challenge 3: Line 148 on the naughty list
 
 You can close metasploit.
 
@@ -67,3 +67,10 @@ There's two list in here.\
 Run `cat naughty_list.txt | grep -n . | grep 148`\
 This will filter out for the 148th line.\
 `-n` in the grep command prepends each line with its corresponding line number.
+
+## Challenge 4: Line 52 on the nice list
+
+We can run the same command as the last challenge.\
+Replace "naughty_list.txt" with "nice_list.txt"\
+Replace 148 with 52\
+`cat nice_list.txt | grep -n . | grep 52`
