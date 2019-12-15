@@ -34,7 +34,7 @@ We are now inside the web server!
 ![inside](https://i.imgur.com/gqiXrqF.png)\
 Now we just hav to find flag1.
 
-This meterpreter session has a very limited amount of commands, such as we can't use the find command to look for anything :/ (The `help` command gives you a list of commands that you can run)
+~~This meterpreter session has a very limited amount of commands, such as we can't use the find command to look for anything :/ (The `help` command gives you a list of commands that you can run)~~ UPDATE: You can use the `shell` command to switch from the meterpreter shell to a linux shell.
 
 I looked inside the directories that were last modified around the time this challenge was released.\
 ![last mod](https://i.imgur.com/0o5JJdw.png)
