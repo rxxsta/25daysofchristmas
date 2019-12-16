@@ -25,7 +25,11 @@ To use in the command line:
 
 2. `cd sherlock` (moves into the project folder)
 
-3. `sudo python3 sherlock.py JLolax1` (searches social media for JLolax1)
+3. `chmod +x ./install_packages.sh` (set execute access so we can run the script)
+
+4. `./install_packages.sh` (installs dependencies)
+
+5. `sudo python3 sherlock.py JLolax1` (searches social media for JLolax1)
 
 ### Finding her social media account
 
