@@ -1,6 +1,6 @@
 # Day 1: Accumalted Challenges
 
-## [Challenge 1](#challenge-1-finding-a-hidden-directory-on-the-web-server) | [Challenge 2](#challenge-2-gaining-initial-access-and-reading-user.txt) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
+## [Challenge 1](#challenge-1-finding-a-hidden-directory-on-the-web-server) | [Challenge 2](#challenge-2-gaining-initial-access-and-read-user.txt) | [Challenge 3](#challenge-3-elevate-priviledges-and-read-root.txt)
 
 This day combines what we learned/did from the other days into one day.
 
@@ -22,14 +22,14 @@ After maybe a few minutes, we get a hit! Along with other files and directories 
 ## Challenge 2: Gaining initial access and read user.txt
 
 Looking deeper into `<directory-name>/index.php` (found with dirbuster), I found wade talking about some if his login info.\
-![user](https://i.imgur.com/H4tJ7Pc.png)\
+![user](https://i.imgur.com/cw753xF.png)\
 Parzival is either his password or username.
 
 Let's go to the login page from the sidebar.\
 Let's try "Wade" as his username and "parzival" as his password.
 
 Andddd we're in\
-![hax0r](https://i.imgur.com/Ah5bxVJ.png)
+![hax0r](https://i.imgur.com/SxphaPv.png)
 
 ...
 
@@ -48,3 +48,7 @@ I guess I'll be using xfreerdp from now on.
 And now we're really in!\
 The file was on the desktop. Super cool challenge!\
 ![remote](https://i.imgur.com/Cd0mZWJ.png)
+
+## Challenge 3: Elevate priviledges and read root.txt
+
+//TODO This challenge was optional and apparently really hard. So, I'll come back later.
