@@ -27,7 +27,7 @@ We have to download and configure the AWS CLI, Kali doesn't come with it.
 3. Run `aws2 configure`
 
 4.
-    1. Go to [security credentials](https://console.aws.amazon.com/iam/home?#/security_credentials) and paste where prompted before
+    1. Go to [security credentials](https://console.aws.amazon.com/iam/home?#/security_credentials)
 
     2. Open up Access keys
 
@@ -37,10 +37,10 @@ We have to download and configure the AWS CLI, Kali doesn't come with it.
 
 5. Open up rootkey.csv
 
-6. Copy and paste into fields respectively.
+6. Copy and paste the keys into the fields respectively.
 
-You can always create a new pair another time in case something happens to rootkey.csv.
+You can always create a new pair another time, in case something happens to rootkey.csv.
 
 You can now view what files are in the bucket with `aws2 s3 ls s3://advent-bucket-one`\
 Download the file with `aws2 s3 cp s3://advent-bucket-one/<file-name> .`\
-And the you can see the contents with `cat <filename>`
+And then you can see the contents of the file with `cat <filename>`
