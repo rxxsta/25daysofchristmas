@@ -2,7 +2,7 @@
 
 ## [Challenge 1](#challenge-1-name-of-the-file-found) | [Challenge 2](#challenge-2-what-is-in-the-file)
 
-All we're given is an s3 bucket name called "advent-bucket-one".
+All we're given is a s3 bucket named "advent-bucket-one".
 
 ## Challenge 1: Name of the file found
 
