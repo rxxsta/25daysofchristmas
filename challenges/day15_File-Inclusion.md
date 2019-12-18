@@ -25,9 +25,13 @@ How are the notes being retrieved?
 If you look at the source code, there seems to be a custom script.\
 ![script](https://i.imgur.com/no1yc4O.png)\
 It looks like it's getting the notes from `/views/notes/<notename>`.\
-And then it has a prepend of `/get-file/`.
 
-We kind of have access `/get-file/`\
+It has a prepend of `/get-file/`.\
+And another "/" and the rest of the "/views/notes/notename.txt" with the "/"s replaced by "%2f".\
+That's what `note.replace(/\//g, '%2f')` is doing (I THINK).\
+[What "/g" means](https://2ality.com/2013/08/regexp-g.html).
+
+We kind of have access to `/get-file/`\
 But I think they gave us too much access
 
 We can do something called [directory traversal](https://www.acunetix.com/websitesecurity/directory-traversal/) to reach `/etc/shadow/`.
@@ -50,7 +54,7 @@ We can use some hashcat and a dictionary to crack the hash.
 Copy and paste the hash portion (the red underlined part) into a new file. 
 ![shadowfile](https://i.imgur.com/gTVjVF4.png)
 
-The hash algorithm it's using is sha512 because of the specified $6$\
+The hash algorithm is sha512 because of the specified $6$\
 The salt is "oHymLspP" because that is the next thing enclosed by $'s
 The rest is the password.
 
