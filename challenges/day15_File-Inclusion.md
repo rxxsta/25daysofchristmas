@@ -1,6 +1,6 @@
 # Day 1: File Inclusion
 
-## [Challenge 1](#challenge-1-where-is-charlie-booking-a-holiday-to) | [Challenge 2](#challenge-2-read-/etc/shadow/-and-crack-charlies-password) | [Challenge 3](#challenge-3-finding-mcinventorys-christmas-request)
+## [Challenge 1](#challenge-1-where-is-charlie-booking-a-holiday-to) | [Challenge 2](#challenge-2-read-/etc/shadow/-and-crack-charlies-password) | [Challenge 3](#challenge-3-reading-flag1.txt)
 
 We're given a machine.\
 I think it's a good idea, from now on, to first enumerate the ip address we're given and check for open ports/services.
@@ -58,3 +58,14 @@ Now let's run it with hashcat with the command\
 `hashcat -m 1800 <your-file-name> /usr/share/wordlists/rockyou.txt --force`
 
 And you'll get the cracked password :D
+
+## Challenge 3: Reading flag1.txt
+
+We found an ssh service running earlier!\
+And now we probably have the credentials to log into it.
+
+Run `ssh charlie@<machine-ip>` and enter his password.
+
+And here it is.\
+![sweet sweet flag](https://i.imgur.com/ZTjAVnI.png)\
+Our sweet, sweet, flag.
