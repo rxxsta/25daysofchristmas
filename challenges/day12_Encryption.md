@@ -1,4 +1,4 @@
-# Day 1: Encryption
+# Day 12: Encryption
 
 ## [Challenge 1](#challenge-1-md5-hashsum-of-note1.txt.gpg) | [Challenge 2](#challenge-2-where-was-elf-bob-told-to-meet-alice) | [Challenge 3](#challenge-3-decrypt-note2)
 
