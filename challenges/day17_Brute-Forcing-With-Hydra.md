@@ -1,4 +1,4 @@
-# Day 1: Hydra
+# Day 17: Hydra
 
 ## [Challenge 1](#challenge-1-using-hydra-to-brute-force-Mollys-web-password) | [Challenge 2](#challenge-2-using-hydra-to-brute-force-Mollys-ssh-password)
 
@@ -18,7 +18,7 @@ Here is some supporting material to look through:\
 
 ## Challenge 1: Using Hydra to brute force Molly's web password
 
-THIS WILL TAK A LONG TIME, I THINK 900k-1MIL ATTEMPTS
+THIS WILL TAKE A LONG TIME, I THINK 900k-1MIL ATTEMPTS
 DO THE SSH CHALLENGE FIRST THEN THIS
 
 You can see what method is being used in the source code.\
