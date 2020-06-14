@@ -16,13 +16,13 @@ and a login screen
 
 The supporting documentation tells us that using "Burp Suite" is an option. But, for today, we can just use our browser's developer options.
 
-It asks us for the authentication cookie, so that means we can probably register as a user and view what cookis are used once we login.
+The challenge asks us for the authentication cookie, so that means we can probably register as a user and view what cookies are used once we login.
 
 ### Make a user account
 
 ![register screen](https://i.imgur.com/n2neaSk.png)
 
-Now we can login with the same credentials
+Now we can login using the same credentials we just created.
 
 ### Find the cookie 🍪🍪
 
@@ -69,7 +69,7 @@ Let's try it.
 
 3. Use the encoding of our new cookie and paste into the same section from where we originally got it
 
-4. Press enter and reload the page so our cookie sets
+4. Press enter and reload the page so our cookie sets 
 
 Holy cow it worked!
 ![mcinventory](https://i.imgur.com/BYAJD7S.png)
