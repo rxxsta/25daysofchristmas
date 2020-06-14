@@ -1,6 +1,6 @@
 # Day 20: Cronjob Privilege Escalation
 
-## [Challenge 1](#challenge-1-what-port-is-ssh-running-on) | [Challenge 2](#challenge-2-crack-sams-password-and-read-flag1.txt) | [Challenge 3](#challenge-3-escalate-priviledges-by-taking-advantage-of-a-cronjob-and-reading-flag2)
+## [Challenge 1](#challenge-1-what-port-is-ssh-running-on) | [Challenge 2](#challenge-2-crack-sams-password-and-read-flag1txt) | [Challenge 3](#challenge-3-escalate-priviledges-by-taking-advantage-of-a-cronjob-and-reading-flag2)
 
 ## Challenge 1: What port is SSH running on
 
@@ -38,11 +38,12 @@ We have permissions to read and write in it!\
 ![nice](https://i.imgur.com/PA68nWh.png)
 
 Let's see what the script does.\
-![work](https://i.imgur.com/rVvSZM9.png)
+![work](https://i.imgur.com/rVvSZM9.png)\
+It is force removing everything in `/tmp/` recursively.
 
 We can test to see if this script is run at all.
 
-I'm going to make a file in the "/tmp/" directory called "lol.txt" and see if get cleaned up.\
+I'm going to make a file in the `/tmp/` directory called "lol.txt" and see if it gets cleaned up.\
 ![test](https://i.imgur.com/U8kSOVJ.png)
 
 It did get cleaned! So, we know it works, and we have permission to change the script.\
