@@ -13,7 +13,7 @@ Luckily, Kali comes with Metasploit!
 Let's use nmap to see what type of OS the server is running and some open ports.\
 ![O](https://i.imgur.com/bf5jJLX.png)\
 It's running on 32 bit Linux.\
-And has ssh, rpcbind, and http running.\
+And has ssh, rpcbind, and http running.
 
 Let's find out what the versions of those services are.
 ![ver](https://i.imgur.com/YyBWs5j.png)\
