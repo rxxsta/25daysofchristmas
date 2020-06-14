@@ -19,7 +19,7 @@ We see that there seems to be username here!
 Kali doesn't come with this, but, there is a super cool tool called [Sherlock](https://github.com/sherlock-project/sherlock) that's perfect for this.\
 It searches usernames throughout a whole bunch of social media platforms.
 
-To use in the command line:
+To download, install, and use in the command line:
 
 1. `git clone https://github.com/sherlock-project/sherlock.git` (downloads the project)
 
@@ -54,7 +54,7 @@ We can use [Wayback Machine](https://web.archive.org) to give us some snapshots 
 
 ## Challenge 5: What famous woman does Lola have on her web page
 
-The challenege is probably talking about this ~~bad bitch~~ woman
+The challenege is probably talking about this woman
 ![queen](https://lolajohnson1998.files.wordpress.com/2019/10/reverse_image_search.jpg)\
 The file on the website was even called "reverse_image_search.jpg" lol. So, that's what we'll do!
 
