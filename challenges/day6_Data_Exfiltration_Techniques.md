@@ -14,7 +14,7 @@ Once filtered, you can see where it looks funky. I don't think DNS queries have 
 This also looks like the one in the example. So, the big long string is probably hex encoded.
 ![dns exf](https://i.imgur.com/qpu5a3x.png)
 
-You can right click the row/packet, then copy as printable text so you can paste it into a hex to ascii converter.\
+You can right click the row/packet, then copy as printable text so you can paste it into a [hex to ascii converter](https://www.rapidtables.com/convert/number/hex-to-ascii.html).\
 And turns out this is our flag!
 
 ## Challenge 2: What did Little Jimmy want to be for Christmas
@@ -46,7 +46,7 @@ Too bad Kali doesn't come with it, but we can download it with the command\
 
 And we just replace "numbers.zip" with "christmaslists.zip". I think we could still use rockyou.txt. I don't think they would give us a super hard password just yet... lol
 
-boom
+boom\
 ![cracked zip](https://i.imgur.com/NUAbzkw.png)
 
 AND NOW we can unzip it with the password we found.
