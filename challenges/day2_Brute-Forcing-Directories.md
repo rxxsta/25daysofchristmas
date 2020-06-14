@@ -20,10 +20,10 @@ Some lists we can use are located under
 
 ### Running dirbuster
 
-Would could also use the command line dirbuster tool, but a GUI tool is already given to us.
+We could also use the command line dirbuster tool, but a GUI tool is already given to us.
 You can search "dirbuster" in the applications of Kali
 
-We can use a small wordlist I think. No way TryHackMe would make it too long to find.
+We can use a small wordlist I think. No way TryHackMe would make it too long to find in a beginner ctf.
 😅
 
 The red means that field was changed
@@ -32,12 +32,12 @@ Recursive was turned off because otherwise it would take an uber long time. It w
 
 We can checkout the results under one of the results tabs.
 
-After a while of dirbuster doing its thing, we get an interesting looking directory with a response code of 200 and it looks like our flag :)
+After a while of dirbuster doing its thing, we get an interesting looking directory with a response code of 200 and it looks like our flag :)\
 ![secret dir](https://i.imgur.com/IEbk8HG.png)
 
 ## Challenge 2: Find a password
 
-If we go to that directory, we can see a similar looking page.
+If we go to that directory, we can see a login page for a forum.
 ![secret](https://i.imgur.com/MBS8Qig.png)
 
 Hmmm let's look at the source code with our browser's developer tools.
@@ -47,7 +47,7 @@ Oh hey! Looks like we find the page design for this website on github under the 
 > arctic digital design
 
 So let's try and search for them on github
-![arctic](https://i.imgur.com/H2AaBR1.png)
+![arctic](https://i.imgur.com/H2AaBR1.png)\
 Found it!
 
 Looks like it came with default credentials. Rookie mistake..
