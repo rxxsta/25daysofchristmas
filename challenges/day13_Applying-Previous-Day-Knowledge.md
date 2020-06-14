@@ -1,4 +1,4 @@
-# Day 1: Accumalted Challenges
+# Day 13: Accumalted Challenges
 
 ## [Challenge 1](#challenge-1-finding-a-hidden-directory-on-the-web-server) | [Challenge 2](#challenge-2-gaining-initial-access-and-read-user.txt) | [Challenge 3](#challenge-3-elevate-priviledges-and-read-root.txt)
 
