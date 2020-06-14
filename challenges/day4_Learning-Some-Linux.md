@@ -2,8 +2,8 @@
 
 ## [Challenge 1](#challenge-1-visible-files-in-home) | [Challenge 2](#challenge-2-content-of-file5) | [Challenge 3](#challenge-3-what-file-contains-the-string-password) | [Challenge 4](#challenge-4-what-file-contains-an-ip-address) | [Challenge 5](#challenge-5-how-many-users-can-log-in) | [Challenge 6](#challenge-6-what-is-the-sha1-hash-of-file8) | [Challenge 7](#challenge-7-mcsysadmins-password-hash)
 
-After deploying our machine and waiting a while
-we have to SSH into this our machine.
+After deploying our machine and waiting a while,
+we can SSH into our machine.
 
 The details on how to SSH into our machine is given.
 ![ssh details](https://i.imgur.com/KLFvgH1.png)
@@ -39,7 +39,7 @@ Because the answer box in \#4 had the format "\*.\*.\*.*", I'm fairly certain th
 
 ...
 
-So, after struggling with the regex, I said fuck it, and literally just looked for any "."\
+So, after struggling with the regex, I literally just looked for any "."\
 `grep -r "\." .`\
 The "\\" character is an escape character, otherwise it would treat the "."(dot) as matching any character.
 
