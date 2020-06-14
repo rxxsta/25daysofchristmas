@@ -16,7 +16,7 @@ Let's run nmap.\
 You might want to do something else for a few minutes because it will take a while depending on how fast your computer is.
 
 `nmap -sS -p 0-65535 <machine-ip>`\
--sS is for a TCP stealth that only sends one packet to see if the TCP port is open. Otherwise, I think it would take a lot longer.
+`-sS` is for a TCP stealth that only sends one packet to see if the TCP port is open. Otherwise, I think it would take a lot longer.
 
 We just wanted to see if any ports were open and then go from there. But after this scan we can see there's only one port open.\
 This is most likey our SSH port we were looking for.
@@ -27,8 +27,17 @@ Now that we have the port SSH is hosted on, let's connect to it with Holly's cre
 
 `ssh holly@<machine-ip> -p <port-number>`
 
-let's find what programs we can run as igor with:\
-`find / -user igor -perm -4000 -exec ls -ldb {} \; 2>/dev/null`
+Let's find what programs we can run as igor with:\
+`find / -user igor -perm -4000 -exec ls -ldb {} \; 2>/dev/null`\
+ `/` is the path so the find tool can look under there\
+ `-user` looks for files that are owned by the specified user\
+ `-perm` looks for files that have the specified permissions\
+ `-4000` specifies to find files with a setuid permission set\
+ `-exec` executes the given commands\
+ `{}` means for every file found use it here\
+ `\;` ends the command in `-exec`\
+ `2>/dev/null` redirects errors (2) and outputs it to `/dev/null` which is just a blackhole
+
 
 The `find` command is run as igor!
 ![igor](https://i.imgur.com/EGBWFHj.png)
