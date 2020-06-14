@@ -3,11 +3,11 @@
 ## [Challenge 1](#challenge-1-destination-ip-on-packet-number-998) | [Challenge 2](#challenge-2-item-on-the-christmas-list) | [Challenge 3](#challenge-3-crack-buddys-password)
 
 This challenege only comes with an *EVIL* pcap (packet capture) file.\
-Lucky for us Kali comes with wireshark to analyze the pcap and hashcat to crack any hashes we find!
+Lucky for us, Kali comes with wireshark to analyze the pcap and hashcat to crack any hashes we find!
 
 ## Challenge 1: destination IP on packet number 998
 
-Once we download the pcap, we can find it in our downloads folder and wireshark should open it by default.
+Once we download the pcap, find it with the file explorer and open it. Wireshark should open it by default.
 
 This is what it will look like
 ![pcap](https://i.imgur.com/NiBMEaV.png)
@@ -36,7 +36,8 @@ Inside of packet number 2255 we see what was put in the list!
 
 ### Looking for more info
 
-Inside of packet no. 2906 we see that someone output the contents of the shadow file. The shadow file contains the hashed values of passwords of all the users.
+Inside of packet no. 2906 we see that someone output the contents of the shadow file. \
+The shadow file contains the hashed values of passwords of all the users.\
 ![shadow](https://i.imgur.com/IXGGDCe.png)
 
 We can right click the packet and follow the tcp stream to see what the server replied back.
@@ -67,7 +68,10 @@ run: `gzip -d /usr/share/wordlists/rockyou.txt.gz` to unzip
 ### Running hashcat to crack Buddy's password
 
 Now we can run hashcat to try and crack buddy's password.\
-`hashcat -m 1800 hash /usr/share/wordlists/rockyou.txt --force`
+`hashcat -m 1800 hash /usr/share/wordlists/rockyou.txt --force`\
+`-m` is so you can specify the hash type that you want hashcat to use\
+`1800` is the SHA-512 code\
+`--force` ignores warnings
 
 After a very short time, hashcat poops out a password for us :)
 ![pass](https://i.imgur.com/t8vjvaA.png)
