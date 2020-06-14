@@ -4,7 +4,7 @@ In this challenege, you have to know some programming. Or, at least, it would be
 
 We are given a website to go visit. On this website,it gives us a value of part of the flag and the name of the next page for the next character of the flag.
 
-Here is what the content of the first page looks like (under "/")
+Here is what the content of the first page looks like (under "/")\
 ![content](https://i.imgur.com/o2qmnwf.png)
 
 The concatination of the spot next to "value" with each subsequent value is the flag. The stream ends when both value and next page equal to "end".
@@ -13,7 +13,7 @@ I don't think you can simply go to all of the pages, there might be way too many
 
 ## Challenge 1: What is the value of the flag
 
-Here are some links that helped me while writing this script:
+Here are some links that helped me while writing this script:\
 <https://www.datacamp.com/community/tutorials/making-http-requests-in-python>\
 <https://www.geeksforgeeks.org/python-string-split/>\
 <https://www.geeksforgeeks.org/print-without-newline-python/>
