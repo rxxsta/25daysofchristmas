@@ -13,11 +13,12 @@ I found another interesting directory that seems to be working, but looks like a
 
 Let's try ending the previous command with `;` character.\
 ![pwd](https://i.imgur.com/noaYkDS.png)\
-It worked!! We're in the root directory.
+It worked!! We're in the root directory.\
+`;` ends the statement so we can start a new command 
 
-We can try putting in a reverse shell or just looking for user.txt.
+We can try putting in a reverse shell or just look for user.txt.
 
-We look for user.txt with the find command.\
+We can look for user.txt with the find command.\
 ![found](https://i.imgur.com/sKDT3EN.png)\
 Found it!
 
