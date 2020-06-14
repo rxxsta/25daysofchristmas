@@ -36,7 +36,7 @@ print("Total number of extracted files: " + str(len(os.listdir(directory))))
 
 ## Challenge 2: How many files contain Version: 1.1 in their metadata
 
-My Kali machine, and maybe yours too doesn't seem to come with `exiftool` or the python module. We need in order for us to script with it. So, we have to install both.
+My Kali machine, and maybe yours too, doesn't seem to come with `exiftool` or the python module. We need them in order for us to script with it. So, we have to install both.
 
 1. `sudo apt install libimage-exiftool-perl` (install cmdline exiftool)
 
@@ -46,7 +46,7 @@ My Kali machine, and maybe yours too doesn't seem to come with `exiftool` or the
 
 4. `python setup.py install`
 
-Now you should be able to use it in your pyhthon scripts.\
+Now you should be able to use it in your python scripts.\
 Here is some documentation for [pyexiftool](https://smarnach.github.io/pyexiftool/)\
 We want to read ["XMP:Version"](https://www.adobe.com/products/xmp.html) not the ExifTool Version Number
 
@@ -68,7 +68,8 @@ print(count)
 ## Challenge 3: Which file contains the password
 
 If you take a look inside any file. It's all gibberish.\
-We should try regexing for a string that says "password" (most likely).
+We should try regexing for a string that says "password" (most likely).\
+This can also be done with grep, but the point is to program :)
 
 ```Python
 import os
