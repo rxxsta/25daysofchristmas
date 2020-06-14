@@ -1,4 +1,4 @@
-# Day 1: File Inclusion
+# Day 15: File Inclusion
 
 ## [Challenge 1](#challenge-1-where-is-charlie-booking-a-holiday-to) | [Challenge 2](#challenge-2-read-/etc/shadow/-and-crack-charlies-password) | [Challenge 3](#challenge-3-reading-flag1.txt)
 
@@ -24,7 +24,7 @@ How are the notes being retrieved?
 
 If you look at the source code, there seems to be a custom script.\
 ![script](https://i.imgur.com/no1yc4O.png)\
-It looks like it's getting the notes from `/views/notes/<notename>`.\
+It looks like it's getting the notes from `/views/notes/<notename>`.
 
 It has a prepend of `/get-file/`.\
 And another "/" and the rest of the "/views/notes/notename.txt" with the "/"s replaced by "%2f".\
